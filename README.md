@@ -1,14 +1,12 @@
 # Semaglutida–GLP-1R Molecular Dynamics Pipeline
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.XXXXXXX.svg)](https://doi.org/10.5281/zenodo.XXXXXXX)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![GROMACS](https://img.shields.io/badge/GROMACS-2025.3-orange)](https://www.gromacs.org/)
 [![Python](https://img.shields.io/badge/Python-3.10+-green)](https://www.python.org/)
 
 **Efecto del pH sobre la afinidad de unión del complejo semaglutida–GLP-1R: estudio in silico de la plausibilidad de señalización endosomal y su relación con la tolerancia clínica**
 
-Vásquez Laime, Renato Junior — ORCID: [0009-0007-1494-4685](https://orcid.org/0009-0007-1494-4685)  
-Asesora: Dra. Muñoz del Carpio Toia, Águeda — ORCID: [0000-0003-0501-7314](https://orcid.org/0000-0003-0501-7314)  
+Vásquez Laime, Renato Junior — ORCID: [0009-0007-1494-4685](https://orcid.org/0009-0007-1494-4685)   
 CBCRG — Universidad Católica de Santa María, Arequipa, Perú — 2026
 
 ---
