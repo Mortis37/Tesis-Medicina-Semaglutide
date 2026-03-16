@@ -1,0 +1,191 @@
+# ChimeraX v12 – labels sin bgColor, membrana: solo P/N opaco, colas ocultas
+set bgColor white
+lighting soft
+
+# ══════════════════════════════════════════════════════════════════════
+# FIGURA 1 – SOLO semaglutida (sticks, sin ribbon, sin receptor)
+# ══════════════════════════════════════════════════════════════════════
+open frame_175ns_ph74.pdb
+hide all
+hide /A ribbons
+hide /A atoms
+hide /B ribbons
+hide /B atoms
+cartoon hide /A
+
+show /A atoms
+style /A stick
+color /A #22CC55 target a
+size /A stickRadius 0.2
+
+view matrix camera -0.7061,0.086141,-0.70285,-228.9,0.70791,0.10945,-0.69778,-225.79,0.016821,-0.99025,-0.13826,23.159
+view matrix models #1,1,0,0,0,0,1,0,0,0,0,1,0
+save fig1_semaglutida_sola.png width 2800 height 2100 supersample 3
+
+# ══════════════════════════════════════════════════════════════════════
+# FIGURA 2 – Histidinas neutras pH 7.4 (azul) – labels sin fondo
+# ══════════════════════════════════════════════════════════════════════
+hide all
+cartoon hide /A
+show /B ribbons
+color /B #C8C8C8 target r
+transparency /B 30 target r
+
+show /A atoms
+style /A stick
+color /A #22CC55 target a
+size /A stickRadius 0.2
+
+show /B:99,171,173,180,212,363,374 atoms
+style /B:99,171,173,180,212,363,374 stick
+color /B:99,171,173,180,212,363,374 #2E86AB target a
+size /B:99,171,173,180,212,363,374 stickRadius 0.32
+
+# SIN bgColor → etiqueta transparente, solo texto coloreado
+label /B:99  residues text "HIS99"  color #1A5276 height 3.5
+label /B:171 residues text "HIS171" color #1A5276 height 3.5
+label /B:173 residues text "HIS173" color #1A5276 height 3.5
+label /B:180 residues text "HIS180" color #1A5276 height 3.5
+label /B:212 residues text "HIS212" color #1A5276 height 3.5
+label /B:363 residues text "HIS363" color #1A5276 height 3.5
+label /B:374 residues text "HIS374" color #1A5276 height 3.5
+
+view matrix camera -0.7061,0.086141,-0.70285,-228.9,0.70791,0.10945,-0.69778,-225.79,0.016821,-0.99025,-0.13826,23.159
+view matrix models #1,1,0,0,0,0,1,0,0,0,0,1,0
+save fig2_histidinas_pH74.png width 2800 height 2100 supersample 3
+label delete
+
+# ══════════════════════════════════════════════════════════════════════
+# FIGURA 3 – Histidinas protonadas pH 5.0 (rojo) – labels sin fondo
+# ══════════════════════════════════════════════════════════════════════
+close all
+open frame_175ns_ph50.pdb
+hide all
+cartoon hide /A
+show /B ribbons
+color /B #C8C8C8 target r
+transparency /B 30 target r
+
+show /A atoms
+style /A stick
+color /A #22CC55 target a
+size /A stickRadius 0.2
+
+show /B:99,171,173,180,212,363,374 atoms
+style /B:99,171,173,180,212,363,374 stick
+color /B:99,171,173,180,212,363,374 #C0392B target a
+size /B:99,171,173,180,212,363,374 stickRadius 0.32
+
+label /B:99  residues text "HIS99+"  color #7B241C height 3.5
+label /B:171 residues text "HIS171+" color #7B241C height 3.5
+label /B:173 residues text "HIS173+" color #7B241C height 3.5
+label /B:180 residues text "HIS180+" color #7B241C height 3.5
+label /B:212 residues text "HIS212+" color #7B241C height 3.5
+label /B:363 residues text "HIS363+" color #7B241C height 3.5
+label /B:374 residues text "HIS374+" color #7B241C height 3.5
+
+view matrix camera -0.7061,0.086141,-0.70285,-228.9,0.70791,0.10945,-0.69778,-225.79,0.016821,-0.99025,-0.13826,23.159
+view matrix models #1,1,0,0,0,0,1,0,0,0,0,1,0
+save fig3_histidinas_pH50.png width 2800 height 2100 supersample 3
+label delete
+
+# ══════════════════════════════════════════════════════════════════════
+# FIGURA 4 – GLU387 acercamiento (rojo) – label sin fondo
+# ══════════════════════════════════════════════════════════════════════
+close all
+open frame_175ns_ph74.pdb
+hide all
+cartoon hide /A
+show /B ribbons
+color /B #D8D8D8 target r
+transparency /B 55 target r
+
+show /A atoms
+style /A stick
+color /A #22CC55 target a
+size /A stickRadius 0.2
+
+show /B:387 atoms
+style /B:387 stick
+color /B:387 #E74C3C target a
+size /B:387 stickRadius 0.38
+
+label /B:387 residues text "GLU387" color #922B21 height 4.5
+
+view matrix camera -0.7061,0.086141,-0.70285,-228.9,0.70791,0.10945,-0.69778,-225.79,0.016821,-0.99025,-0.13826,23.159
+view matrix models #1,1,0,0,0,0,1,0,0,0,0,1,0
+zoom 2.5
+save fig4_GLU387_closeup.png width 2800 height 2100 supersample 3
+label delete
+
+# ══════════════════════════════════════════════════════════════════════
+# FIGURA 5 – Núcleo hidrofóbico (azul) – labels sin fondo
+# ══════════════════════════════════════════════════════════════════════
+close all
+open frame_175ns_ph74.pdb
+hide all
+cartoon hide /A
+show /B ribbons
+color /B #D8D8D8 target r
+transparency /B 50 target r
+
+show /A atoms
+style /A stick
+color /A #22CC55 target a
+size /A stickRadius 0.2
+
+show /B:204,183,244,233,166 atoms
+style /B:204,183,244,233,166 stick
+color /B:204,183,244,233,166 #2471A3 target a
+size /B:204,183,244,233,166 stickRadius 0.32
+
+label /B:204 residues text "MET204" color #1A5276 height 3.5
+label /B:183 residues text "LEU183" color #1A5276 height 3.5
+label /B:244 residues text "LEU244" color #1A5276 height 3.5
+label /B:233 residues text "MET233" color #1A5276 height 3.5
+label /B:166 residues text "LEU166" color #1A5276 height 3.5
+
+view matrix camera -0.7061,0.086141,-0.70285,-228.9,0.70791,0.10945,-0.69778,-225.79,0.016821,-0.99025,-0.13826,23.159
+view matrix models #1,1,0,0,0,0,1,0,0,0,0,1,0
+zoom 2.0
+save fig5_nucleo_hidrofobico.png width 2800 height 2100 supersample 3
+label delete
+
+# ══════════════════════════════════════════════════════════════════════
+# FIGURA 6 – Bicapa lipídica: SOLO cabezas P/N visibles y opacas
+# Estrategia limpia:
+#   1. Ocultar TODO de lípidos
+#   2. Mostrar SOLO P y N como esferas grandes y opacas → 2 planos densos
+#   3. El receptor y sema permanecen completamente visibles
+# ══════════════════════════════════════════════════════════════════════
+close all
+open frame_175ns_ph74_memb.pdb
+hide all
+
+# Receptor: ribbon gris visible
+show /B ribbons
+color /B #909090 target r
+transparency /B 0 target r
+
+# Semaglutida: sticks verdes, sin ribbon
+hide /A ribbons
+cartoon hide /A
+show /A atoms
+style /A stick
+color /A #22CC55 target a
+size /A stickRadius 0.22
+
+# BICAPA: SOLO fósforos (P) y nitrogenos (N) de cabezas hidrofílicas
+# r=2.8, transparencia 15% → esferas grandes, densas y muy visibles
+# Las colas nunca se muestran → interior completamente limpio
+select :POP & (@P | @N)
+show sel atoms
+style sel sphere
+color sel #E8860A target a
+transparency sel 15 target a
+size sel atomRadius 2.8
+~select
+
+view matrix camera -0.7061,0.086141,-0.70285,-228.9,0.70791,0.10945,-0.69778,-225.79,0.016821,-0.99025,-0.13826,23.159
+view matrix models #1,1,0,0,0,0,1,0,0,0,0,1,0
+save fig6_con_membrana.png width 2800 height 2100 supersample 3
