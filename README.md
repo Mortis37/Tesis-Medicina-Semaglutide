@@ -6,8 +6,8 @@
 
 **Efecto del pH sobre la afinidad de unión del complejo semaglutida–GLP-1R: estudio in silico de la plausibilidad de señalización endosomal y su relación con la tolerancia clínica**
 
-Vásquez Laime, Renato Junior — ORCID: [0009-0007-1494-4685](https://orcid.org/0009-0007-1494-4685)  
-CBCRG — Universidad Católica de Santa María, Arequipa, Perú — 2026
+Vásquez Laime, Renato Junior - ORCID: [0009-0007-1494-4685](https://orcid.org/0009-0007-1494-4685)  
+CBCRG - Universidad Católica de Santa María, Arequipa, Perú - 2026
 
 ---
 
