@@ -227,7 +227,7 @@ Las trayectorias completas (`.xtc`, ~50 GB por réplica) no están incluidas en 
 
 ## Licencia
 
-MIT License — ver [LICENSE](LICENSE) para detalles.
+MIT License - ver [LICENSE](LICENSE) para detalles.
 
 ---
 
@@ -235,4 +235,4 @@ MIT License — ver [LICENSE](LICENSE) para detalles.
 
 **Renato Junior Vásquez Laime**  
 ORCID: [0009-0007-1494-4685](https://orcid.org/0009-0007-1494-4685)  
-CBCRG — Universidad Católica de Santa María, Arequipa, Perú
+CBCRG - Universidad Católica de Santa María, Arequipa, Perú
